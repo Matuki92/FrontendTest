@@ -1,0 +1,101 @@
+/* ---- css reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- components ---- */
+
+body {
+  background: rgb(240, 240, 240);
+  color: #111;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+#site-header {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  border: 1px solid silver;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 20px;
+}
+
+@media (min-width: 568px) {
+  .container {
+    max-width: 528px;
+    margin: 0 auto;
+  }
+}
+
+
+/* Search */
+
+#search-box {
+  margin-bottom: 30px;
+}
+
+#search-input, #search-btn {
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+
+#search-btn {
+  background: rgb(240, 240, 240);
+}
+
+/* Error box */
+
+#error-msg {
+  background: rgb(255, 200, 200);
+  border: 1px solid red;
+  padding: 20px;
+}
+
+/* User data box */
+
+#result-box {
+}
+
+#user-repos {
+  overflow: scroll;
+  max-height: 500px;
+}
+
+.user-info > img, .user-info > .user-name {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#user-repos > hr {
+  border: 1px solid black;
+}
+
+.repo-info > h4, .repo-info > .forks {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+.forks {
+  float: right;
+}
+
+.forks > p {
+  display: inline-block
+}
